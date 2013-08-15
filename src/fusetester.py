@@ -24,8 +24,6 @@ def main(bamfiles, baifiles, extracommands=None):
     mapping = dict([(item[u'$dnanexus_link'], "input%04d.bam"%i) for (i, item) in enumerate(bamfiles)])
     mapping.update([(item[u'$dnanexus_link'], "input%04d.bai"%i) for (i, item) in enumerate(baifiles)])
 
-    #print subprocess.check_output(["dpkg", "-l"])
-
     os.makedirs("dxfuse")
 
     subprocess.call(["/opt/lldxfuse.py", "dxfuse",  json.dumps(mapping)])

@@ -1,6 +1,6 @@
 {
-  "name": "fusetester",
-  "title": "fusetester",
+  "name": "nexus-fusetester",
+  "title": "nexus-fusetester",
   "summary": "Testing 'mounting' of file(s) using FUSE",
   "dxapi": "1.0.0",
   "version": "0.0.1",
@@ -16,12 +16,6 @@
       "label": "Indices for BAM files",
       "class": "array:file",
       "optional": false
-    },
-    {
-      "name": "extracommands",
-      "label": "Extra commands",
-      "class": "array:string",
-      "optional": true
     }
   ],
   "runSpec": {
